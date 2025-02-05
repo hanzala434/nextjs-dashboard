@@ -23,6 +23,9 @@ importers:
       clsx:
         specifier: ^2.1.1
         version: 2.1.1
+      git:
+        specifier: ^0.1.5
+        version: 0.1.5
       next:
         specifier: latest
         version: 15.1.6(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
@@ -544,6 +547,10 @@ packages:
     engines: {node: '>=10'}
     deprecated: This package is no longer supported.
 
+  git@0.1.5:
+    resolution: {integrity: sha512-N+bfOrXyKMU/fQtCj6D/U9MQOEN0DAA8TLHSLdUQRSWBOkeRvsjJHdrdkvcq05xO7GSDKWc3nDEGoTZ4DfCCSg==}
+    engines: {node: '>=0.4.0'}
+
   glob-parent@5.1.2:
     resolution: {integrity: sha512-AOIgSQCepiJYwP3ARnGx+5VnTu2HBYdzbGP45eLw1vr3zB3vZLeyed1sC9hnbcOc9/SrMyM5RPQrkGz4aS9Zow==}
     engines: {node: '>= 6'}
@@ -639,6 +646,9 @@ packages:
   micromatch@4.0.8:
     resolution: {integrity: sha512-PXwfBhYu0hBCPw8Dn0E+WDYb7af3dSLVWKi3HGv84IdF4TyFoC0ysxFd0Goxw7nSv4T/PzEJQxsYsEiFCKo2BA==}
     engines: {node: '>=8.6'}
+
+  mime@1.2.9:
+    resolution: {integrity: sha512-WiLgbHTIq5AYUvU/Luli4mZ1bUcHpGNHyCsbl+KPMg4zt+XUDpQehWjuBjdLaEvDTinvKj/FgfQt3fPoT7j08g==}
 
   mini-svg-data-uri@1.4.4:
     resolution: {integrity: sha512-r9deDe9p5FJUPZAk3A59wGH7Ii9YrjjWw0jmw/liSbHl2CHiyXj6FcDXDu2K3TjVAXqiJdaw3xxwlZZr9E6nHg==}
@@ -1495,6 +1505,10 @@ snapshots:
       strip-ansi: 6.0.1
       wide-align: 1.1.5
 
+  git@0.1.5:
+    dependencies:
+      mime: 1.2.9
+
   glob-parent@5.1.2:
     dependencies:
       is-glob: 4.0.3
@@ -1590,6 +1604,8 @@ snapshots:
     dependencies:
       braces: 3.0.3
       picomatch: 2.3.1
+
+  mime@1.2.9: {}
 
   mini-svg-data-uri@1.4.4: {}
 
